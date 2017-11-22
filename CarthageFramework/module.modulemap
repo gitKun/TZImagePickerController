@@ -1,0 +1,5 @@
+framework module TZImagePickerController {
+    umbrella header "TZImagePickerControllerHeaders.h"
+    export *
+    module * { export * }
+}

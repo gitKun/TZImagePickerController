@@ -40,6 +40,7 @@
 		5505188F1FC3163A0066972D /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EBF5D51C2E298000CB9BCC /* UIView+Layout.m */; };
 		550518901FC3163A0066972D /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5358CC1D64600F00928CC6 /* NSBundle+TZImagePicker.m */; };
 		550518911FC316470066972D /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DC358651CC8BAFD00898D29 /* TZImagePickerController.bundle */; };
+		550FBEC71FC420EF003F0CC6 /* TZImagePickerControllerHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 550FBEC61FC420E8003F0CC6 /* TZImagePickerControllerHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D32B9BD1CD83640005CE1E0 /* LxGridViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D32B9BC1CD83640005CE1E0 /* LxGridViewFlowLayout.m */; };
 		6D4608311DFFC60D004FB009 /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4608301DFFC60D004FB009 /* TZGifPhotoPreviewController.m */; };
 		6D5358CD1D64600F00928CC6 /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5358CC1D64600F00928CC6 /* NSBundle+TZImagePicker.m */; };
@@ -128,6 +129,7 @@
 		5505185F1FC315F30066972D /* CarthageFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		550518661FC315F30066972D /* CarthageFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarthageFrameworkTests.m; sourceTree = "<group>"; };
 		550518681FC315F30066972D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550FBEC61FC420E8003F0CC6 /* TZImagePickerControllerHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZImagePickerControllerHeaders.h; sourceTree = "<group>"; };
 		6D12FC191D66B71E00182C44 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		6D12FC1A1D66B71E00182C44 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		6D32B9BB1CD83640005CE1E0 /* LxGridViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxGridViewFlowLayout.h; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				550518591FC315F30066972D /* CarthageFramework.h */,
+				550FBEC61FC420E8003F0CC6 /* TZImagePickerControllerHeaders.h */,
 				5505185A1FC315F30066972D /* Info.plist */,
 			);
 			path = CarthageFramework;
@@ -380,6 +383,7 @@
 				550518761FC3161F0066972D /* TZPhotoPickerController.h in Headers */,
 				550518771FC3161F0066972D /* TZAssetCell.h in Headers */,
 				550518781FC3161F0066972D /* TZAssetModel.h in Headers */,
+				550FBEC71FC420EF003F0CC6 /* TZImagePickerControllerHeaders.h in Headers */,
 				550518791FC3161F0066972D /* TZPhotoPreviewController.h in Headers */,
 				5505187A1FC3161F0066972D /* TZPhotoPreviewCell.h in Headers */,
 				5505187B1FC3161F0066972D /* TZVideoPlayerController.h in Headers */,
@@ -740,6 +744,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(PROJECT_DIR)/CarthageFramework/module.modulemap";
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmss.tz;
@@ -783,6 +788,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(PROJECT_DIR)/CarthageFramework/module.modulemap";
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmss.tz;
